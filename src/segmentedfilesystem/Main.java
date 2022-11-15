@@ -11,7 +11,7 @@ public class Main {
         String server = "localhost";
         // CHANGE THIS DEFAULT PORT TO THE PORT NUMBER PROVIDED
         // BY THE INSTRUCTOR.
-        int port = 0;
+        int port = 6014;
         
         if (args.length >= 1) {
             server = args[0];
@@ -29,9 +29,8 @@ public class Main {
         }
         
         try {
-            fileRetriever.downloadFiles();
+            fileRetriever.downloadFiles(3);
         } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
